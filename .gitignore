@@ -1,0 +1,6 @@
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+*.xcodeproj/project.xcworkspace/xcuserdata/tongullman.xcuserdatad/UserInterfaceState.xcuserstate
+.DS_Store
+*.xcworkspace/xcuserdata/
+build/*

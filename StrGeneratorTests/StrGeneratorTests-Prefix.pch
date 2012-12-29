@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'StrGeneratorTests' target in the 'StrGeneratorTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#define LOG(fmt, ...) NSLog((@"[%@] " fmt), NSStringFromSelector(_cmd), ##__VA_ARGS__);
+#define LOG_PRINT(fmt, ...) NSLog((@"%s " fmt), __func__, ##__VA_ARGS__);
+#define LOG_METHOD NSLog(@"%@/%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#else
+#define LOG(...);
+#define LOG_METHOD;
+#define LOG_PRINT(...);
+#endif

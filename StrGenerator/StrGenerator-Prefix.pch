@@ -1,0 +1,44 @@
+//
+// Prefix header for all source files of the 'StrGenerator' target in the 'StrGenerator' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+#define LOG(fmt, ...) NSLog((@"[%@] " fmt), NSStringFromSelector(_cmd), ##__VA_ARGS__);
+#define LOG_PRINT(fmt, ...) NSLog((@"%s " fmt), __func__, ##__VA_ARGS__);
+#define LOG_METHOD NSLog(@"%@/%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#else
+#define LOG(...);
+#define LOG_METHOD;
+#define LOG_PRINT(...);
+#endif
+
+/// Adwhirl
+#define ADWHIRL_APP_KEY @""
+
+
+/// Google Analytics
+#define GA_TRACKING_ID @""
+#define GA_DEBUG NO
+
+///// Accessibility
+#define AC_TOP_TEXT @"Top_TextView"
+#define AC_TOP_COPY @"Top_CopyButton"
+#define AC_TOP_CLOSE @"Top_CloseButton"
+#define AC_TOP_DELETE @"Top_DeleteButton"
+#define AC_TOP_SETTING @"Top_SettingButton"
+#define AC_SET_TABLE @"Set_Table"
+#define AC_SET_OK @"Set_OkButton"
+#define AC_SET_CANCEL @"Set_CancelButton"
+#define AC_SET_CLOSE @"Set_CloseButton"
+#define AC_SET_STRINGCOUNT @"Set_StringCountLabel"
