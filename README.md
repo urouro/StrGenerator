@@ -6,4 +6,10 @@ String Generator
 
 ✔ アプリの入力文字数チェックに   
 ✔ ランダムなパスワードの生成に 
-
+  
+  
+【その他やってみたこと】  
+・KIF（でもテストコード途中）  
+・GHUnit  
+・Adwhirl(iAd+Admob)  
+・Google Analytics v2  
